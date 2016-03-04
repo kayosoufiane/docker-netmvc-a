@@ -19,3 +19,5 @@ script:
   - cat stdout.log
   - cat stderr.log
   - curl http://127.0.0.1:9090/ | grep -q 'Web Server A'
+
+after_success: coveralls
