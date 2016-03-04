@@ -11,9 +11,9 @@ script:
   - docker run --name testwebserver -d -p 9090:80 ykandrirody/docker-netmvc-a
   - docker ps -a
   - docker logs testwebserver > stdout.log 2>stderr.log
-  - docker exec ls -lah
+  - docker exec testwebserver ls -lah
   - curl http://127.0.0.1:9090/
-  - docker exec ls -lah
+  - docker exec testwebserver ls -lah
   - ls -lah
   - cat stdout.log
   - cat stderr.log
