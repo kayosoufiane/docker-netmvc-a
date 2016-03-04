@@ -22,7 +22,7 @@ public class Startup
 		app.UseMvcWithDefaultRoute();
    }
 }
- 
+
 public class HomeController : Controller
 {
     public IActionResult Index()
