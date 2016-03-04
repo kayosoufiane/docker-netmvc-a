@@ -3,8 +3,6 @@ sudo: required
 services:
   - docker
 
-docker run -it -p 5011:80 --name web.a ykandrirody/docker-netmvc-a
-
 script:
   # Build image
   - docker build -t ykandrirody/docker-netmvc-a .
