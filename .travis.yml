@@ -24,4 +24,4 @@ script:
   - curl http://127.0.0.1:9090/ | grep -q 'Web Server A'
 
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
