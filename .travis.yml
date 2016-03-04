@@ -3,6 +3,9 @@ sudo: required
 services:
   - docker
 
+before_install:
+  - pip install codecov
+
 script:
   # Build image
   - ls -lah
@@ -20,4 +23,5 @@ script:
   - cat stderr.log
   - curl http://127.0.0.1:9090/ | grep -q 'Web Server A'
 
-after_success: coveralls
+after_success:
+  - codecov
