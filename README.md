@@ -1,5 +1,6 @@
 # Lightweight ASP .Net Web Server - Version A - Docker image
 
+[![Build Status](https://travis-ci.org/ykandrirody/docker-netmvc-a.svg?branch=master)](https://travis-ci.org/ykandrirody/docker-netmvc-a)
 
 ## Usage
 ```
