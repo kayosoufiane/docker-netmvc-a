@@ -15,8 +15,6 @@ public class Startup
     {
 		loggerFactory.AddConsole();
 		
-		loggerFactory.AddDebug();
-		
 		app.UseIISPlatformHandler();
 		
 		app.UseDeveloperExceptionPage();
