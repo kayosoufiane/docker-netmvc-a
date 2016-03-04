@@ -9,4 +9,5 @@ script:
   # Test for single database
   - docker run --name testwebserver -d -p 9090:80 ykandrirody/docker-netmvc-a
   - docker ps -a
+  - curl http://127.0.0.1:9090/
   - curl http://127.0.0.1:9090/ | grep -q 'Web Server A'
